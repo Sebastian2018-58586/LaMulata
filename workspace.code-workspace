@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "img",
+			"path": "..\\..\\Downloads\\lp-moonlight-parallax-js-main\\img"
+		},
+		{
+			"name": "LA MULATA",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "LA MULATA"
+	}
+}

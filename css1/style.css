@@ -1,0 +1,234 @@
+:root {
+    --negro: #1a1a1a;
+    --blanco: #ffffff;
+    --rosado: #f5f5f5;
+    --gold-color: #ffb944;
+    --rojo: #e902028c;
+    --griss: #f5f5f5;
+}
+
+.fondogris { background-color: var(--griss); }
+.fondoblanco{ background-color: var(--blanco); }
+.fondonegro { background-color: var(--negro); }
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{font-size: 66px; font-weight: 700; line-height: 80px; }
+h2 { font-size: 48px; margin-bottom: 30px; color: black; }
+
+.navbar {
+    background-color: var(--negro);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    min-height: 100px;
+}
+
+
+.nav-link{ color: var(--blanco);
+}
+ /* luisya fotografia  */
+.navbar-brand{ color: var(--blanco);
+} 
+/* letra de inicio portafoli */
+.nav-item{
+    color: var(--rosado);
+}
+
+.nav-link :hover {color: var(--gold-color);}
+
+ /* tamaño del logo paa el inicio   */
+/* .logo-brand {
+    min-width: 100px;
+    max-width: 100px;
+} */
+
+/* Cuadro del menu*/
+.navbar-toggler {font-size: 40px;}
+.navbar-toggler:focus {outline: none;}
+
+.hola{
+    min-width: 1000px;
+     /* max-width: 800px;  */
+    max-height: 600px;
+}
+
+/* #hero{
+    background-image: url('Imagenes/12.png');
+     background-size: cover;
+    padding-top: 30%; 
+    min-height: 100%; 
+    color: white;
+}
+#hero{
+    background-image: url('Imagenes/13.png');
+     background-size: cover;
+    padding-top: 30%; 
+    min-height: 100%; 
+    color: white;
+} */
+
+
+.content-centerr {
+    max-width: 800px;
+    margin: 0 auto 300px auto;
+    text-align: center;
+    color: white
+}
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+} 
+
+
+
+.full-width {
+    width: 100%;
+}
+
+.form-control {
+    font-size: 14px;
+    border: 1px solid #cacaca;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    border: 1px solid var(--dark-color);
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.nav-link { color: var(--dark-color); }
+.nav-link:hover { color: var(--dark-color); }
+
+.navbar-toggler { font-size: 40px; }
+.navbar-toggler:focus { outline: none; }
+
+/* //////////////
+   Hero
+//////////////*/
+
+#hero {
+    background-image: url(../../assets/images/hero.jpg);
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: var(--white-color);
+}
+
+#hero p {
+    color: var(--white-color);
+}
+
+/* //////////////
+   Portfolio
+//////////////*/
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 60px 0;
+    border-radius: 2px;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-details {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
+.portfolio-details a h2, .portfolio-details a p {
+    color: var(--blanco);
+}
+
+/* portafoli */
+
+.member-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.member-details {
+    position: absolute;
+    color: var(--negro);
+    bottom: 0;
+    left: 20px;
+}
+
+.member-details span {
+    font-size: 14px;
+}
+
+.member-details i {
+    padding: 0 5px;
+}
+
+
+/* precios */
+
+.pricing-container {
+    margin: 15px 0;
+}
+
+.plans {
+    padding: 50px 80px;
+    border-radius: 2px;
+    min-width: 450px;
+}
+
+.plan-light {
+    background-color: var(--white-color);
+    border: 2px solid var(--dark-color);
+}
+
+.plan-dark {
+    background-color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+    color: var(--white-color);
+}
+
+.plans h2 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.plans h2 span {
+    font-size: 20px;
+}
+
+.plans ul {
+    list-style-type: square;
+}
+
+.nav-item p{color: black;}
+.nav-item h5{color: black;}
+.form-text {  color: black;}
+.form-label{  color: black;}
+.tituloh22 { text-align: center;}
+.form-label{
+    width: 1200px;
+}
+
+  

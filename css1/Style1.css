@@ -1,0 +1,68 @@
+:root {
+    --negro: #1a1a1a;
+    --blanco: #ffffff;
+    --Amarillo: #fccb28;
+    --CafeOscuro: #402e2c;
+    --CafeClaro: #815e36;
+
+
+/* barra de navegacion */
+
+}
+.navbar-brand img{
+    width: 260px;
+    height: 110px;
+    
+}
+
+.navbar button{
+    background-color: var(--Amarillo);
+    
+/* }
+.navbar{
+    background-color: var(--negro);
+     */
+}
+.navbar-toggler {
+    background-color: var(--Amarillo);
+    
+}
+
+.navbar-brand-l{
+    background-color: var(--Amarillo);
+    
+    
+}
+
+/* carrusel imagenaes  */
+
+
+
+/* imagen de la multa - logo  */
+
+.navbar-brand img {
+    width: 150px;  /* ancho */
+    height: 65px; 
+    
+}
+
+/* 2 nivel  */
+
+.carousel-item img{
+     /* position: relative; */
+    width: 993px;
+    height: 662px; 
+    
+    
+}
+
+
+
+/* contenedor incio de sesion  */
+
+/* .container-fluid{
+    width: 1000px;
+    height: 65px;
+    background-color: var(--negro);
+} */
+

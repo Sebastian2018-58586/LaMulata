@@ -1,0 +1,279 @@
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --Amarillo: #fccb28;
+    --CafeOscuro: #402e2c;
+    --CafeClaro: #815e36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: var(--blanco);
+}
+
+
+/* imagen  */
+
+
+/* .sidebar .sidebar-menu .profile img{
+    width: 400px;
+    height: 400px;
+} */
+
+
+/* color de arriba , negro */
+
+.wrapper .header {
+    z-index: 1;
+    background: var(--negro);
+    position: fixed;
+    width: calc(100% - 0%);
+    height: 70px;
+    display: flex;
+    top: 0;
+}
+
+.wrapper .header .header-menu {
+    width: calc(100% - 0%);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+/* titulo de la barra */
+
+.wrapper .header .header-menu .title {
+    color: var(--blanco);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.wrapper .header .header-menu .title span {
+    color: var(--Amarillo);
+}
+
+
+/* boton para deslizar  */
+
+.wrapper .header .header-menu .sidebar-btn {
+    background-color: var(--negro);
+    color: var(--blanco);
+    position: absolute;
+    margin-left: 240px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+
+/* cambiar color al seleccionar */
+
+.wrapper .header .header-menu .sidebar-btn:hover {
+    color: var(--Amarillo);
+}
+
+
+/* iconon de busquedfa y los otros 3 qu estan ahi  */
+
+.wrapper .header .header-menu ul {
+    /* background-color: var(--Amarillo); */
+    display: flex;
+    /* color: var(--blanco); */
+}
+
+.wrapper .header .header-menu ul li a {
+    background-color: var(--blanco);
+    color: var(--negro);
+    display: block;
+    margin: 0 10px;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    transition-property: background, color;
+}
+
+
+/* ubicacion del slider negro  */
+
+.wrapper .header .header-menu ul li a:hover {
+    background-color: var(--Amarillo);
+    /* color: var(--blanco); */
+}
+
+.wrapper .sidebar {
+    z-index: 1;
+    background: var(--negro);
+    position: fixed;
+    top: 70px;
+    width: 250px;
+    height: calc(100% - 0%);
+    transition: 0.3s;
+    transition-property: width;
+    overflow-y: auto;
+}
+
+.wrapper .sidebar .sidebar-menu {
+    overflow: hidden;
+}
+
+
+/* esto es para poner la imagen redonda  */
+
+.wrapper .sidebar .sidebar-menu .profile img {
+    margin: 20px 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.wrapper .sidebar .sidebar-menu .profile p {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.wrapper .sidebar .sidebar-menu .item {
+    width: 250px;
+    overflow: hidden;
+}
+
+
+/* ubicacion y color de los elementos del slider -- apartados  */
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn {
+    display: block;
+    color: var(--blanco);
+    position: relative;
+    /* paddding sirve para gestionar desde que tamaño se puede deslizar y ver los otros menu  */
+    padding: 25px 20px;
+    transition: 00.3s;
+    transition-property: color;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn:hover {
+    /* color: var(--negro);
+    background-color: var(--Amarillo) */
+    color: var(--Amarillo);
+    /* background-color: var(--Amarillo) */
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn i {
+    margin-right: 20px;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn .drop-down {
+    float: right;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+
+/* redimensionar los submenus */
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu {
+    background-color: var(--blanco);
+    overflow: hidden;
+    transition: 0.3s;
+    /* muestro los submenus  */
+    transition-property: background, max-height;
+    /* oculto los submenus con el maximo del largo  */
+    max-height: 0;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a {
+    display: block;
+    position: relative;
+    color: var(--negro);
+    white-space: normal;
+    font-size: 15px;
+    padding: 20px;
+    /* lineas de separacoon  */
+    border-bottom: 1.5px solid var(--negro);
+    transition: 00.3s;
+    transition-property: background;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a:hover {
+    background: var(--Amarillo);
+}
+
+
+/* tamaño de lo iconos  */
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu i {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+
+/* muestro los submenus con u tamaño predeterminado */
+
+.wrapper .sidebar .sidebar-menu .item:target .sub-menu {
+    max-height: 500px;
+}
+
+
+/* fondo para la seleccio  de los apartados - menu  */
+
+.wrapper .main-container {
+    width: (100% - 250px);
+    margin-top: 70px;
+    margin-left: 250px;
+    padding: 15px;
+    background: url(../imagenes/comida.jpg);
+    /* background: var(--Amarillo); */
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.wrapper.collapse .sidebar {
+    width: 60px;
+}
+
+
+/* configuracion para el desplazmaiento y ocultar barra */
+
+.wrapper.collapse .sidebar img,
+.wrapper.collapse .sidebar p,
+.wrapper.collapse .sidebar a span {
+    display: none;
+}
+
+.wrapper.collapse .sidebar-menu .item .menu-btn {
+    font-size: 18px;
+}
+
+.wrapper.collapse .sidebar-menu .item .menu-btn i {
+    font-size: 18px;
+    padding-left: 3px;
+}
+
+.wrapper.collapse .main-container {
+    width: (100px - 60px);
+    margin-left: 60px;
+}
+
+.wrapper .main-container .card {
+    background-color: var(--blanco);
+    padding: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
